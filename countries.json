@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Austria",
+        "num_gold": 7,
+        "num_silver": 7,
+        "num_bronze": 4,
+        "flag_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3gQAQAqdyk0MZVavC0_W7FB6Gp_pvWnVyzA&s"
+    },
+    {
+        "name": "China",
+        "num_gold": 9,
+        "num_silver": 4,
+        "num_bronze": 2,
+        "flag_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/255px-Flag_of_the_People%27s_Republic_of_China.svg.png"
+    },
+    {
+        "name": "France",
+        "num_gold": 5,
+        "num_silver": 7,
+        "num_bronze": 2,
+        "flag_url": "https://cdn.britannica.com/82/682-004-F0B47FCB/Flag-France.jpg"
+    },
+    {
+        "name": "Germany",
+        "num_gold": 12,
+        "num_silver": 10,
+        "num_bronze": 5,
+        "flag_url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png"
+    },
+    {
+        "name": "Netherlands",
+        "num_gold": 8,
+        "num_silver": 5,
+        "num_bronze": 4,
+        "flag_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM89PWpoVWcc5Vx1mmGfuUFMZVCwn5cM57xw&s"
+    },
+    {
+        "name": "Norway",
+        "num_gold": 16,
+        "num_silver": 8,
+        "num_bronze": 13,
+        "flag_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/1200px-Flag_of_Norway.svg.png"
+    },
+    {
+        "name": "ROC",
+        "num_gold": 6,
+        "num_silver": 12,
+        "num_bronze": 14,
+        "flag_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Russian_Olympic_Committee_flag.png"
+    },
+    {
+        "name": "Sweden",
+        "num_gold": 8,
+        "num_silver": 5,
+        "num_bronze": 5,
+        "flag_url": "https://upload.wikimedia.org/wikipedia/en/4/4c/Flag_of_Sweden.svg"
+    },
+    {
+        "name": "Switzerland",
+        "num_gold": 7,
+        "num_silver": 2,
+        "num_bronze": 5,
+        "flag_url": "https://st2.depositphotos.com/1007997/5889/v/950/depositphotos_58894729-stock-illustration-switzerland-flag-vector.jpg"
+    },
+    {
+        "name": "USA",
+        "num_gold": 8,
+        "num_silver": 10,
+        "num_bronze": 7,
+        "flag_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg/640px-Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg.png"
+    }
+]

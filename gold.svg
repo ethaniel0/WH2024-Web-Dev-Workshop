@@ -1,0 +1,31 @@
+<svg width="142" height="166" viewBox="0 0 142 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M120.41 21.9609C121.922 20.1204 120.613 17.3502 118.231 17.3502H88.4746C87.6199 17.3502 86.8113 17.7378 86.276 18.4041L54.5558 57.888C53.073 59.7337 54.3869 62.4746 56.7544 62.4746H85.7898C86.6336 62.4746 87.4332 62.0967 87.9689 61.4447L120.41 21.9609Z" fill="#B73F48"/>
+    <path d="M15.1755 21.9609C13.6633 20.1204 14.9726 17.3502 17.3546 17.3502H47.1108C47.9655 17.3502 48.7742 17.7378 49.3095 18.4041L81.0297 57.888C82.5124 59.7337 81.1985 62.4746 78.831 62.4746H49.7957C48.9518 62.4746 48.1523 62.0967 47.6166 61.4447L15.1755 21.9609Z" fill="#FB071A"/>
+    <circle cx="69.2028" cy="92.0875" r="45.1244" fill="#FDDC79" stroke="#FBAD24" stroke-width="2.82028"/>
+    <line x1="68.1638" y1="45.553" x2="68.1638" y2="133.724" stroke="#FBAD24" stroke-width="2.82028"/>
+    <line x1="82.8591" y1="50.4512" x2="82.8591" y2="133.724" stroke="#FBAD24" stroke-width="2.82028"/>
+    <line x1="97.5539" y1="60.2482" x2="97.5539" y2="123.927" stroke="#FBAD24" stroke-width="2.82028"/>
+    <line x1="53.4687" y1="50.4512" x2="53.4687" y2="133.724" stroke="#FBAD24" stroke-width="2.82028"/>
+    <line x1="38.7737" y1="60.2482" x2="38.7737" y2="123.927" stroke="#FBAD24" stroke-width="2.82028"/>
+    <line x1="22.6682" y1="93.1672" x2="110.839" y2="93.1672" stroke="#FBAD24" stroke-width="2.82028"/>
+    <line x1="27.2908" y1="78.4289" x2="110.563" y2="78.4289" stroke="#FBAD24" stroke-width="2.82028"/>
+    <line x1="36.812" y1="63.7364" x2="100.491" y2="63.7364" stroke="#FBAD24" stroke-width="2.82028"/>
+    <line x1="27.8416" y1="107.814" x2="111.114" y2="107.814" stroke="#FBAD24" stroke-width="2.82028"/>
+    <line x1="37.9141" y1="122.507" x2="101.593" y2="122.507" stroke="#FBAD24" stroke-width="2.82028"/>
+    <g filter="url(#filter0_d_1112_351)">
+    <rect x="69.1401" y="74.7063" width="24.4919" height="24.4919" rx="2.82028" transform="rotate(45 69.1401 74.7063)" fill="#FFEFBC" fill-opacity="0.95" shape-rendering="crispEdges"/>
+    </g>
+    <defs>
+    <filter id="filter0_d_1112_351" x="30.4278" y="53.3122" width="77.4247" height="77.4248" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feOffset/>
+    <feGaussianBlur stdDeviation="11.2811"/>
+    <feComposite in2="hardAlpha" operator="out"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0.533765 0 0 0 0 0.493901 0 0 0 0 0.37431 0 0 0 0.8 0"/>
+    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1112_351"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1112_351" result="shape"/>
+    </filter>
+    </defs>
+    </svg>
+    

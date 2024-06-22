@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dev Workshop (Thanks Arthi)</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+        body {
+            background-color: #013D8E;
+            color: white;
+            font-family: Inter;
+            display: flex;
+        }
+
+        #leaderboard-header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 50px;
+        }
+
+        #gold {
+            display: inline-flex;
+            background-color: gold;
+            width: 1.5em;
+            height: 1.5em;
+            color: black;
+            justify-content: center;
+            align-items: center;
+            border-radius: 1.5rem;
+        }
+        #silver {
+            display: inline-flex;
+            background-color: silver;
+            width: 1.5em;
+            height: 1.5em;
+            color: black;
+            justify-content: center;
+            align-items: center;
+            border-radius: 1.5rem;
+        }
+        #bronze {
+            display: inline-flex;
+            background: linear-gradient(145deg, #3C2415 4.26%, #AB8871 60.63%, #A47556 92.09%);;
+            width: 1.5em;
+            height: 1.5em;
+            color: black;
+            justify-content: center;
+            align-items: center;
+            border-radius: 1.5rem;
+        }
+
+        #leaderboard-section {
+            height: 100vh;
+            overflow: auto;
+        }
+
+        .leaderboard-entry{
+            font-size: 25px;
+            background-color: white;
+            color: black;
+            padding: 30px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            gap: 50px;
+        }
+
+        .leaderboard-entry img{
+            width: 50px;
+        }
+
+        .leaderboard-entry .left{
+           display: flex;
+           gap: 10px;
+        }
+        .leaderboard-entry .right{
+            display: flex;
+            gap: 20px;
+        }
+    
+        #graphs {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        #graph {
+            display: flex;
+            align-items: end;
+            flex-grow: 1;
+        }
+
+        .bar {
+            position: relative;
+        }
+
+
+
+        .bar img {
+            width: 60%;
+        }
+
+        #first {
+            height: 50%;
+            background-color: gold;
+        }
+        #second {
+            height: 40%;
+            background-color: silver;
+        }
+        #third {
+            height: 20%;
+            background-color: brown;
+        }
+
+        .bar .flag {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%) translateY(-115%);
+        }
+    </style>
+</head>
+<body>
+
+    <section id="graphs">
+        <h2>Overall Winners</h2>
+
+        <div id="graph">
+            <div id="third" class="bar">
+                <img src="bronze.svg" alt="">
+                <img src="norway.png" alt="" class="flag">
+            </div>
+            <div id="second" class="bar">
+                <img src="silver.svg" alt="">
+                <img src="norway.png" alt="" class="flag">
+            </div>
+            <div id="first" class="bar">
+                <img src="gold.svg" alt="">
+                <img src="norway.png" alt="" class="flag">
+            </div>
+        </div>
+       
+    </section>
+
+    <section id="leaderboard-section">
+        <div id="leaderboard-header">
+            <h2>Leaderboard</h2>
+            <div>
+                <span id="gold">G</span>
+                <span id="silver">S</span>
+                <span id="bronze">B</span>
+                <span>Total</span>
+            </div>
+        </div>
+        
+        <div id="entry-list"> 
+        </div>
+           
+    </section>
+
+    <script>
+        entryList = document.getElementById('entry-list');
+        countries = [
+            {
+                name: 'Norway',
+                golds: 16,
+                silvers: 8,
+                bronze: 13
+            },
+            {
+                name: 'Germany',
+                golds: 12,
+                silvers: 10,
+                bronze: 5
+            }
+        ];
+
+        fetch('countries.json')
+            .then(resp => resp.json())
+            .then(countries => {
+
+                countries.sort((a, b) => b.num_gold - a.num_gold)
+
+                for (let i = 0; i < countries.length; i++){
+                    let country = countries[i];
+                    element = `
+                    <div class="leaderboard-entry">
+                        <div class="left">
+                            <span>${i+1}</span>
+                
+                            <img src="${country.flag_url}" alt="">
+                            <span>${country.name}</span>
+                        </div>
+                       
+                        <div class="right">
+                            <span><b>${country.num_gold}</b></span>
+                            <span>${country.num_silver}</span>
+                            <span>${country.num_bronze}</span>
+                            <span>${country.num_gold + country.num_silver + country.num_bronze}</span>
+                        </div>
+                    </div>  
+                    `;
+                    entryList.innerHTML += element;
+        
+                }        
+            })
+
+    </script>
+    
+</body>
+</html>
